@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: white;
+    color: black;
     outline: none;
     scroll-behavior: smooth;
 
@@ -11,36 +11,46 @@
 
 body {
     scroll-behavior: smooth;
-    background-image: linear-gradient(0deg, #0f051d 40%, #0b032b 60%);
+    /* background-image: linear-gradient(0deg, #0f051d 40%, #0b032b 60%); */
 }
 
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 9vh;
     padding-right: 1.3rem;
     color: white;
     top: 0;
     position: fixed;
-    width: 100vw;
-    background-color: #08062c;
+    /* width: 100vw; */
+    width: 100%;
+    /* background-color: #08062c; */
+    background-color: #2a61ec;
+}
+.w-color{
+    color: white;
+}
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    color: white;
 }
 
 .top-left h1 {
     cursor: pointer;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-family: sans-serif;
     font-weight: bold;
+    color: white;
 }
 .top-mid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30vw;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .top-right {
@@ -70,7 +80,7 @@ body {
     width: 40vw;
     font-size: 1.5rem;
     z-index: 999;
-    background-color: #38393b5c;
+    background-color: #4f7ede5c;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px black;
     display: none;
@@ -120,30 +130,36 @@ body {
     font-size: 3.5rem;
     font-family: system-ui;
     text-align: center;
-    color: #cec6c6;
     line-height: 4.2rem;
+    color: black;
 }
 
 .mid-hero h2 {
     font-size: 1.7rem;
     font-family: system-ui;
     text-align: center;
-    color: #908c8c;
+    color: #4d4a4a;
     padding-top: 1.5rem;
 }
 
 .mid-hero p {
     font-size: 1.1rem;
     padding-top: 1rem;
-    color: #cec6c6;
+    color: #4d4a4a;
     font-family: sans-serif;
     line-height: 1.7rem
 }
 
-.mid-hero span {
-    -webkit-background-clip: text;
+.span-color{
+    /* -webkit-background-clip: text;
     background-image: linear-gradient(25deg, #2600fc, #ff00ea);
-    color: transparent;
+    color: transparent; */
+    color: #2a61ec;
+}
+
+.fa-check-circle:before, .fa-circle-check:before {
+    content: "\f058";
+    color: #3f9f5c;
 }
 
 .hero-section img {
@@ -170,19 +186,23 @@ body {
 
 .explore-btn i {
     padding-left: 0.5rem;
+    color: black;
+    font-size: 1.3rem;
 }
 
 .explore-btn button {
     cursor: pointer;
-    -webkit-background-clip: text;
-    color: transparent;
+    /* -webkit-background-clip: text; */
+    /* color: transparent; */
+    color: white;
+    background-color: #2a61ec;
     border: 5px solid white;
-    border-top: 2.5px solid #2600fc;
-    border-bottom: 2.5px solid #ff00ea;
+    /* border-top: 2.5px solid #2600fc;
+    border-bottom: 2.5px solid #ff00ea; */
     padding: 1rem;
     border-radius: 50px;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     font-family: sans-serif;
     margin: 2rem;
@@ -197,12 +217,16 @@ body {
     animation: move 1.5s infinite;
     padding-top: 1rem;
 }
+.fa-solid, .fas {
+    font-weight: 900;
+    color: black;
+}
 
 /* br */
 hr {
-    color: rgb(6, 15, 61);
+    color: #2a61ec;
     margin-top: 3.5rem;
-    box-shadow: 0px 1px 20px #ff00ea;
+    /* box-shadow: 0px 1px 20px grey; */
 }
 
 /* Top-coin */
@@ -215,7 +239,7 @@ hr {
     font-size: 2.5rem;
     font-family: sans-serif;
     margin: 4rem;
-    color: #cec6c6;
+    color: black;
 }
 
 .first-row {
@@ -242,31 +266,34 @@ hr {
     align-items: center;
     border-radius: 3rem;
     margin: 3rem;
-    box-shadow: 0px 1px 20px #04029b;
+    box-shadow: 0px 1px 20px #2a61ec;
 }
 
 .t-coin img {
-    width: 7rem;
+    width: 5.5rem;
 }
 
 .t-coin h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-family: sans-serif;
     padding-top: 1.5rem;
+    color: black;
 }
 
 .t-coin h4 {
     font-size: 1.1rem;
     font-family: sans-serif;
     padding-top: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    color: black;
 }
 
 .t-coin h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-top: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: sans-serif;
+    color: black;
 }
 
 /* Market-Update */
@@ -279,6 +306,7 @@ hr {
 
 .market-update {
     width: 80vw;
+    /* width: 100%; */
 }
 
 .market-update h2 {
@@ -293,13 +321,14 @@ hr {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.8rem;
-    background-image: linear-gradient(30deg, #2600fc, #ff00ea);
-    ;
+    font-size: 1.5rem;
+    /* background-image: linear-gradient(30deg, #2600fc, #ff00ea); */
+    background-color: #2a61ec;
     padding: 1rem;
     font-weight: 700;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
+    width: 100%;
 }
 
 .coin-list-top p {
@@ -310,10 +339,10 @@ hr {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: system-ui;
     height: 10vh;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
     font-weight: 600;
 }
 .coin-list-row p {
@@ -330,12 +359,12 @@ hr {
     font-family: sans-serif;
 }
 .why span{
-    -webkit-background-clip: text;
-    background-image: linear-gradient(25deg,#2600fc,#ff00ea);
-    color: transparent;
+    /* -webkit-background-clip: text;
+    background-image: linear-gradient(25deg,#2600fc,#ff00ea); */
+    color: #2a61ec;
 }
 .w-img img{
-    width: 18rem;
+    width: 15rem;
 }
 .why-text h1{
     text-align: center;
@@ -363,7 +392,7 @@ hr {
 }
 .vis1 h2{
     margin: 2rem;
-    color: #cec6c6;
+    color: #2a61ec;
 }
 .vis1 h1{
     font-size: 2.6rem;
@@ -383,9 +412,9 @@ hr {
     margin: 4rem;
 }
 .vis2 h2{
-    -webkit-background-clip: text;
-    background-image: linear-gradient(25deg,#2600fc,#ff00ea);
-    color: transparent;
+    /* -webkit-background-clip: text;
+    background-image: linear-gradient(25deg,#2600fc,#ff00ea); */
+    color: #2a61ec;
 }
 .join-btn{
     text-align: center;
@@ -394,10 +423,10 @@ hr {
 .join-btn button{
     cursor: pointer;
     -webkit-background-clip: text;
-    color: transparent;
+    /* color: transparent; */
     border: 5px solid white;
-    border-top: 2.5px solid #2600fc;
-    border-bottom: 2.5px solid #ff00ea;
+    border-top: 2.5px solid #2a61ec;
+    border-bottom: 2.5px solid #2a61ec;
     padding: 1rem;
     border-radius: 50px;
     font-size: 1.3rem;
@@ -417,23 +446,26 @@ hr {
     text-align: center;
     font-family: sans-serif;
     font-size: 1.1rem;
-    background-color: #08062c;
+    /* background-color: #08062c; */
 }
 /* HOVER */
 .top-left h1:hover{
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     background-image: linear-gradient(25deg,#2600fc,#ff00ea);
-    color: transparent;
+    color: transparent; */
+    color: black;
 }
 .top-mid a:hover{
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     background-image: linear-gradient(25deg,#2600fc,#ff00ea);
-    color: transparent;
+    color: transparent; */
+    color: black;
 }
 .top-right a i:hover{
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     background-image: linear-gradient(25deg,#2600fc,#ff00ea);
-    color: transparent;
+    color: transparent; */
+    color: black;
     transform: translateY(-5px);
     font-size: 1.2rem;
 }
@@ -501,7 +533,7 @@ hr {
         width: 100%;
     }
 
-    .coin-list {
+    .coin-lists {
         min-width: 90vw;
         overflow-x: auto;
         display: flex;
@@ -514,6 +546,6 @@ hr {
         display: none;
     }
     .box{
-        width: 30vw;
+        width: 45vw;
     }
 }
