@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 9vh;
+    height: 10vh;
     padding-right: 1.3rem;
     color: white;
     top: 0;
@@ -38,7 +38,7 @@ body {
 
 .top-left h1 {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
