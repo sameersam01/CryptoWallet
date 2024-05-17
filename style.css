@@ -16,18 +16,17 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
     padding-right: 1.3rem;
     color: white;
     top: 0;
     position: fixed;
-    /* width: 100vw; */
     width: 100%;
-    /* background-color: #08062c; */
     background-color: #2a61ec;
 }
+
 .w-color{
     color: white;
 }
@@ -42,8 +41,9 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     color: white;
+    margin: 20px;
 }
-.top-mid {
+/* .top-mid {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,22 +51,57 @@ body {
     font-size: 1.1rem;
     font-family: sans-serif;
     font-weight: 600;
-}
+} */
 
 .top-right {
     color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 15vw;
+    width: auto;
     font-size: 1.1rem;
+    margin: 15px;
 }
-.top-right a {
+.sign{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.signText{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+.signTextIn{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.signTextUp{
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px Solid white;
+    color: #2a61ec;
+    background-color: white;
+}
+.signTextUp:hover{
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px Solid white;
+    color: white;
+    background-color: #2a61ec;
+}
+
+/* .top-right a {
     padding: 0.3rem;
 }
 .top-right a i{
     transition: 0.3s;
-}
+} */
 
 .side-btn {
     padding-left: 0.5rem;
@@ -328,7 +363,8 @@ hr {
     font-weight: 700;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
 }
 
 .coin-list-top p {

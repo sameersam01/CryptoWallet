@@ -33,12 +33,12 @@ let dogecap =document.getElementById("doge-cap");
 let usdcap =document.getElementById("usd-cap");
 
 
-sidebarOn.onclick=()=>{
-    sidebar.style.display="flex";
-}
-sidebarOff.onclick=()=>{
-    sidebar.style.display="none";
-}
+// sidebarOn.onclick=()=>{
+//     sidebar.style.display="flex";
+// }
+// sidebarOff.onclick=()=>{
+//     sidebar.style.display="none";
+// }
  
 let settings = {
     "async": true,
