@@ -32,7 +32,53 @@ let thrcap =document.getElementById("thr-cap");
 let dogecap =document.getElementById("doge-cap");
 let usdcap =document.getElementById("usd-cap");
 
+// -------------------------------------------------------------------------------------------------------
 
+function loadData(){
+
+    $.getJSON("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Ctether%2Cbinancecoin%2Csolana%2Cripple%2Cusd%2Ccardano%2Cdogecoin%2Cpolkadot&vs_currencies=usd&include_market_cap=true&include_24hr_change=true",function(data){
+        console.log(data)
+        
+        btc.innerText = data.bitcoin.usd;
+        eth.innerText = data.ethereum.usd;
+        cdn.innerText = data.cardano.usd;
+        doge.innerText = data.dogecoin.usd;
+
+        btctime.innerText = (data.bitcoin.usd_24h_change).toFixed(2);
+        ethtime.innerText = (data.ethereum.usd_24h_change).toFixed(2);
+        cdntime.innerText = (data.cardano.usd_24h_change).toFixed(2);
+        dogetime.innerText = (data.dogecoin.usd_24h_change).toFixed(2);
+
+        btcrow.innerText = data.bitcoin.usd;
+        ethrow.innerText = data.ethereum.usd;
+        cdnrow.innerText = data.cardano.usd;
+        dogerow.innerText = data.dogecoin.usd;
+        thrrow.innerText = data.tether.usd;
+        usdrow.innerText = data.usd.usd;
+
+        btcrowch.innerText = (data.bitcoin.usd_24h_change).toFixed(2);
+        ethrowch.innerText = (data.ethereum.usd_24h_change).toFixed(2);
+        cdnrowch.innerText = (data.cardano.usd_24h_change).toFixed(2);
+        dogerowch.innerText = (data.dogecoin.usd_24h_change).toFixed(2);
+        thrrowch.innerText = (data.tether.usd_24h_change).toFixed(2);
+        usdrowch.innerText = (data.usd.usd_24h_change).toFixed(2);
+
+        btccap.innerText = data.bitcoin.usd_market_cap;
+        ethcap.innerText = data.ethereum.usd_market_cap;
+        cdncap.innerText = data.cardano.usd_market_cap;
+        thrcap.innerText = data.tether.usd_market_cap;
+        usdcap.innerText = data.usd.usd_market_cap;
+        dogecap.innerText = data.dogecoin.usd_market_cap;
+
+    })
+   }
+   loadData();
+   
+//    setInterval(function(){
+//     loadData();
+//     },10000);
+
+//    -----------------------------------------------------------------------------------------------------
 // sidebarOn.onclick=()=>{
 //     sidebar.style.display="flex";
 // }
@@ -40,43 +86,48 @@ let usdcap =document.getElementById("usd-cap");
 //     sidebar.style.display="none";
 // }
  
-let settings = {
-    "async": true,
-    "scrossDomain": true,
-    "url":"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Ctether%2Cbinancecoin%2Csolana%2Cripple%2Cusd%2Ccardano%2Cdogecoin%2Cpolkadot&vs_currencies=usd&include_market_cap=true&include_24hr_change=true",
-    "method": "GET",
-    "headers":{}
-}
-$.ajax(settings).done(function(response){
-    btc.innerText = response.bitcoin.usd;
-    eth.innerText = response.ethereum.usd;
-    cdn.innerText = response.cardano.usd;
-    doge.innerText = response.dogecoin.usd;
+// let settings = {
+//     "async": true,
+//     "scrossDomain": true,
+//     "url":"https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Ctether%2Cbinancecoin%2Csolana%2Cripple%2Cusd%2Ccardano%2Cdogecoin%2Cpolkadot&vs_currencies=usd&include_market_cap=true&include_24hr_change=true",
+//     "method": "GET",
+//     "headers":{}
+// }
+
+// $.ajax(settings).done(function(response){
+//     btc.innerText = response.bitcoin.usd;
+//     eth.innerText = response.ethereum.usd;
+//     cdn.innerText = response.cardano.usd;
+//     doge.innerText = response.dogecoin.usd;
     
-    btctime.innerText = (response.bitcoin.usd_24h_change).toFixed(2);
-    ethtime.innerText = (response.ethereum.usd_24h_change).toFixed(2);
-    cdntime.innerText = (response.cardano.usd_24h_change).toFixed(2);
-    dogetime.innerText = (response.dogecoin.usd_24h_change).toFixed(2);
+//     btctime.innerText = (response.bitcoin.usd_24h_change).toFixed(2);
+//     ethtime.innerText = (response.ethereum.usd_24h_change).toFixed(2);
+//     cdntime.innerText = (response.cardano.usd_24h_change).toFixed(2);
+//     dogetime.innerText = (response.dogecoin.usd_24h_change).toFixed(2);
     
-    btcrow.innerText = response.bitcoin.usd;
-    ethrow.innerText = response.ethereum.usd;
-    cdnrow.innerText = response.cardano.usd;
-    dogerow.innerText = response.dogecoin.usd;
-    thrrow.innerText = response.tether.usd;
-    usdrow.innerText = response.usd.usd;
+//     btcrow.innerText = response.bitcoin.usd;
+//     ethrow.innerText = response.ethereum.usd;
+//     cdnrow.innerText = response.cardano.usd;
+//     dogerow.innerText = response.dogecoin.usd;
+//     thrrow.innerText = response.tether.usd;
+//     usdrow.innerText = response.usd.usd;
     
-    btcrowch.innerText = (response.bitcoin.usd_24h_change).toFixed(2);
-    ethrowch.innerText = (response.ethereum.usd_24h_change).toFixed(2);
-    cdnrowch.innerText = (response.cardano.usd_24h_change).toFixed(2);
-    dogerowch.innerText = (response.dogecoin.usd_24h_change).toFixed(2);
-    thrrowch.innerText = (response.tether.usd_24h_change).toFixed(2);
-    usdrowch.innerText = (response.usd.usd_24h_change).toFixed(2);
+//     btcrowch.innerText = (response.bitcoin.usd_24h_change).toFixed(2);
+//     ethrowch.innerText = (response.ethereum.usd_24h_change).toFixed(2);
+//     cdnrowch.innerText = (response.cardano.usd_24h_change).toFixed(2);
+//     dogerowch.innerText = (response.dogecoin.usd_24h_change).toFixed(2);
+//     thrrowch.innerText = (response.tether.usd_24h_change).toFixed(2);
+//     usdrowch.innerText = (response.usd.usd_24h_change).toFixed(2);
     
-    btccap.innerText = response.bitcoin.usd_market_cap;
-    ethcap.innerText = response.ethereum.usd_market_cap;
-    cdncap.innerText = response.cardano.usd_market_cap;
-    thrcap.innerText = response.tether.usd_market_cap;
-    usdcap.innerText = response.usd.usd_market_cap;
-    dogecap.innerText = response.dogecoin.usd_market_cap;
+//     btccap.innerText = response.bitcoin.usd_market_cap;
+//     ethcap.innerText = response.ethereum.usd_market_cap;
+//     cdncap.innerText = response.cardano.usd_market_cap;
+//     thrcap.innerText = response.tether.usd_market_cap;
+//     usdcap.innerText = response.usd.usd_market_cap;
+//     dogecap.innerText = response.dogecoin.usd_market_cap;
     
-})
+// })
+
+// setInterval(function(){
+//     loadData();
+// },5000);
