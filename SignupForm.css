@@ -1,0 +1,82 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: .5px solid rgba(128, 128, 128, 0.671);
+  
+}
+.navbar .logo span{
+  color: rgb(80, 127, 229);
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.navbar button{
+  padding: 15px;
+  border: .5px rgba(128, 128, 128, 0.671) solid;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.n2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-right: 40px;
+}
+.m1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.m1 span:nth-child(1){
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+#s1{
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#s2{
+  color: royalblue;
+  
+}
+.signup input{
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.671);
+  border-radius: 6px;
+
+}
+
+.signup button{
+  background-color: rgba(80, 127, 229, 0.949);
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 16px;
+  font-size: medium;
+  margin-top: 10px;
+}
+.signup button:hover{
+  background-color: rgb(80, 127, 229);
+}
