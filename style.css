@@ -376,6 +376,9 @@ hr {
 .coin-list-top p {
     width: 12vw;
 }
+.coin-lists{
+    height: 70vh;
+}
 
 .coin-list-row {
     display: flex;
