@@ -15,9 +15,10 @@ let rece= false;
 recBtn.addEventListener("click",function(){
     if(rece==false){
         document.getElementById("recive-btn-id").style.boxShadow = "0px 0px 10px green"
-        document.getElementById("frame-child2").style.display ="none"
-        document.getElementById("select-coin").style.display ="none"
+        // document.getElementById("frame-child2").style.display ="none"
+        // document.getElementById("select-coin").style.display ="none"
         document.getElementById("frame-parent7").style.display ="none"
+        document.getElementById("send-btn-wrapper").style.display ="none"
         document.getElementById("frame-input").innerText="Receivers address"
         rece =true
     }
