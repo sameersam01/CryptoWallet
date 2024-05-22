@@ -10,6 +10,8 @@
   background: url(./Cover.png);
   background-size: cover;
   color: white;
+  overflow: hidden;
+  max-height: 745px;
 }
 .header {
   background-color: transparent;
@@ -57,6 +59,16 @@
   width: 773px;
   border-radius: 16px;
   background-color: rgb(255 255 255 / 9%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.center::-webkit-scrollbar{
+  width: 4px;
+ 
+}
+
+.chart{
+  height: 572px;
 }
 .right {
   height: 380px;
@@ -100,4 +112,40 @@
 
 .receiveBtn {
   background: transparent;
+}
+.balance{
+  height: 230px;
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  
+}
+.b1 {
+  font-size: xx-large;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-left: 90px;
+  
+}
+.b2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: .5px solid rgba(128, 128, 128, 0.321);
+  padding: 10px;
+  font-weight: 500;
+}
+.b2-values{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: small;
+  color: rgba(255, 255, 255, 0.63);
+  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
 }
