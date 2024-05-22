@@ -2252,6 +2252,7 @@ height: 100%;
 }
 
 .navbar .dd_menu .dd_right{
+  background-color: rgb(128 47 177 / 15%);
   /* padding: 15px 20px; */
   padding-top: 1rem;
     padding-bottom: 1rem;
@@ -2298,6 +2299,8 @@ height: 100%;
 .navbar .dd_main.active .dd_menu{
 	display: flex;
   margin-right: 4rem;
+  background-color: rgb(255 255 255 / 90%);
+  border-bottom: 1px solid white;
 }
 .fa-solid, .fas {
   font-weight: 900;
