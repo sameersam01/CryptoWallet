@@ -110,3 +110,32 @@ body{
 
   opacity:1 }
 }
+
+/* landing2*/
+
+
+.landing2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: linear 2s animatebottom;
+}
+.buttons-div{
+  display: flex;
+  gap: 10px;
+
+}
+.buttons-div button{
+  padding: 10px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.104);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.buttons-div button:hover{
+  background-color: rgba(255, 255, 255, 0.142);
+}
