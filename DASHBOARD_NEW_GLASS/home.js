@@ -5,37 +5,28 @@ var dd_main = document.querySelector(".dd_main");
 	});    
 
     
-let senBtn=document.querySelector("#send-btn-id");
-let recBtn=document.querySelector("#recive-btn-id");
-let destAdd=document.querySelector("#frame-parent6");
-let amt=document.querySelector("#frame-parent7");
-let rece= false;
+let senBtn=document.querySelector("#send-btn");
+let recBtn=document.querySelector("#rec-btn");
 
+let curr=true;
 
-recBtn.addEventListener("click",function(){
-    if(rece==false){
-        document.getElementById("recive-btn-id").style.boxShadow = "0px 0px 10px green"
-        // document.getElementById("frame-child2").style.display ="none"
-        // document.getElementById("select-coin").style.display ="none"
-        document.getElementById("frame-parent7").style.display ="none"
-        document.getElementById("send-btn-wrapper").style.display ="none"
-        document.getElementById("frame-input").innerText="Receivers address"
-        rece =true
-    }
-    else{
-        rece =false
+senBtn.addEventListener("click",function(){
+    if(curr==false){
+        document.getElementById("amount").style.display= "flex";   
+        document.getElementById("send-btn").style.color= "white";   
+        document.getElementById("rec-btn").style.color= "grey";   
+        document.getElementById("dest-address").innerText= "Destination address";   
+        
+        curr=true;
     }
 })
-senBtn.addEventListener("click",function(){
-    if(send==false){
-        document.getElementById("recive-btn-id").style.boxShadow = "0px 0px 10px grey"
-        document.getElementById("frame-child2").style.display ="flex"
-        document.getElementById("select-coin").style.display ="flex"
-        document.getElementById("frame-parent7").style.display ="flex"
-        document.getElementById("frame-input").innerText="Destination address"
-        send =true
-    }
-    else{
-        send =false
+
+recBtn.addEventListener("click",function(){
+    if(curr==true){
+        document.getElementById("amount").style.display= "none";
+        document.getElementById("send-btn").style.color= "grey";   
+        document.getElementById("rec-btn").style.color= "white";   
+        document.getElementById("dest-address").innerText= "Address";   
+        curr=false;
     }
 })

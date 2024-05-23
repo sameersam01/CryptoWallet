@@ -213,6 +213,7 @@
               <div class="select-coin">
 
                   <select name="coins" id="coins">
+                    <option value="select-option">Select coin --</option>
                     <option value="BTC">Bitcoin</option>
                     <option value="ETH">Etherium</option>
                     <option value="JUP">Jupiter</option>
@@ -223,9 +224,9 @@
               </div>
               <div class="destination-address">
                 <input class="select-coin-dropdown" type="text" />
-                <div class="select-coin1">Destination Address</div>
+                <div class="select-coin1" id="dest-address">Destination Address</div>
               </div>
-              <div class="amount">
+              <div class="amount" id="amount">
                 <input class="select-coin-dropdown" type="text" />
                 <div class="select-coin1">Amount</div>
                 <div class="availablebalance">available: 0.0007btc</div>
@@ -235,8 +236,8 @@
                   <span>Swipe-down</span> <img src="Polygon 1.png" />
                 </div>
               </div>
-              <div class="sendbtn">Send</div>
-              <div class="receivebtn">Receive</div>
+              <div class="sendbtn" id="send-btn">Send</div>
+              <div class="receivebtn" id="rec-btn">Receive</div>
               <div class="send-receive-item"></div>
             </div>
           </div>
