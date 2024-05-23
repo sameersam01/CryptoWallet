@@ -172,12 +172,43 @@
         </div>
         <div class="rightall">
           <div class="right">
-            <div class="tab">
-              <button class="sendBtn">Send</button>
-              <button class="receiveBtn">Receive</button>
+            <div class="send-receive">
+              <div class="send-receive-child"></div>
+              <div class="send-wrapper">
+                <span><button>Submit</button></span>
+              </div>
+              <div class="view-all-transactions-wrapper">
+                <div class="view-all-transactions">View All Transactions</div>
+              </div>
+              <div class="select-coin">
 
+                  <select name="coins" id="coins">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Etherium</option>
+                    <option value="JUP">Jupiter</option>
+                    <option value="USDT">Thether</option>
+                  </select>
+
+                <div class="select-coin1">Select coin</div>
+              </div>
+              <div class="destination-address">
+                <input class="select-coin-dropdown" type="text" />
+                <div class="select-coin1">Destination Address</div>
+              </div>
+              <div class="amount">
+                <input class="select-coin-dropdown" type="text" />
+                <div class="select-coin1">Amount</div>
+                <div class="availablebalance">available: 0.0007btc</div>
+              </div>
+              <div class="swipe-down">
+                <div class="sd2">
+                  <span>Swipe-down</span> <img src="Polygon 1.png" />
+                </div>
+              </div>
+              <div class="sendbtn">Send</div>
+              <div class="receivebtn">Receive</div>
+              <div class="send-receive-item"></div>
             </div>
-      
           </div>
           <div class="right-bottom">
             <!-- TradingView Widget BEGIN -->
@@ -230,7 +261,6 @@
         </div>
       </div>
     </div>
-    
 
     <script
       src="https://kit.fontawesome.com/7bf9ff52a1.js"

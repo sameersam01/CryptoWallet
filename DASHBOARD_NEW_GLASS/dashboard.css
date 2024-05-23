@@ -29,6 +29,7 @@
   justify-content: space-around;
   width: 150px;
   align-items: center;
+  
 }
 .avatar {
   background-color: rgba(255, 255, 255, 0.2);
@@ -75,6 +76,8 @@
   width: 284px;
   background-color: rgb(255 255 255 / 9%);
   border-radius: 16px;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 .rightall {
   display: flex;
@@ -148,4 +151,411 @@
   height: 40px;
   padding: 10px;
   margin-top: 10px;
+}
+
+
+
+
+.send-receive-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0.01px;
+  	backdrop-filter: blur(20px);
+  	border-radius: var(--br-base);
+  	background-color: #1c1c1c;
+  	width: 284px;
+  	height: 542px;
+  	opacity: 0.6;
+}
+.send {
+  	position: absolute;
+  	top: 11px;
+  	left: 30px;
+  	letter-spacing: 0.18em;
+}
+.send-wrapper {
+  	position: absolute;
+  	top: 337px;
+  	left: 83.01px;
+  	border-radius: var(--br-base);
+  	background-color: rgba(255, 255, 255, 0.05);
+  	width: 100px;
+  	height: 38px;
+  	overflow: hidden;
+}
+.send-wrapper button{
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.view-all-transactions {
+  	position: relative;
+}
+.view-all-transactions-wrapper {
+  	position: absolute;
+  	top: 402px;
+  	left: 26.01px;
+  	border-radius: 12px;
+  	background-color: #2b2b2b;
+  	width: 213px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 10px 24px;
+  	box-sizing: border-box;
+  	font-size: 11px;
+}
+.select-coin-dropdown ,#coins {
+  	position: absolute;
+  	top: 33px;
+  	left: 4px;
+  	border-radius: var(--br-base);
+  	background-color: var(--color-gray-100);
+  	width: 213px;
+  	height: 31px;
+  	overflow: hidden;
+    border: none;
+    outline: none;
+    color: white;
+}
+#coins{
+  text-align: center;
+  
+}
+#coins option{
+  background-color: rgba(4, 4, 4, 0.44);
+  
+}
+.select-coin1 {
+  	position: absolute;
+  	top: 6px;
+  	left: 27px;
+}
+.select-coin {
+  	position: absolute;
+  	top: 76px;
+  	left: 21.01px;
+  	width: 241px;
+  	height: 70px;
+  	overflow: hidden;
+}
+.destination-address {
+  	position: absolute;
+  	top: 146px;
+  	left: 21.01px;
+  	width: 241px;
+  	height: 70px;
+  	overflow: hidden;
+}
+.availablebalance {
+  	position: absolute;
+  	top: 68px;
+  	left: 27px;
+  	font-size: 8px;
+  	font-weight: 500;
+  	color: rgba(255, 255, 255, 0.18);
+}
+.amount {
+  	position: absolute;
+  	top: 216px;
+  	left: 21.01px;
+  	width: 241px;
+  	height: 83px;
+  	overflow: hidden;
+}
+.p {
+  	margin: 0;
+}
+.swipe-down1 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+}
+.swipe-down-child {
+  	position: absolute;
+  	top: 12px;
+  	left: 24px;
+  	width: 10px;
+  	height: 10px;
+  	object-fit: contain;
+}
+.swipe-down {
+  	position: absolute;
+  	top: 441px;
+  	left: 108.01px;
+  	width: 58px;
+  	height: 24px;
+  	font-size: 10px;
+  	color: rgba(255, 255, 255, 0.2);
+}
+.sendbtn {
+  	position: absolute;
+  	top: 32px;
+  	left: 49.01px;
+  	font-size: var(--font-size-base);
+  	font-weight: 500;
+}
+.receivebtn {
+  	position: absolute;
+  	top: 32px;
+  	left: 179.01px;
+  	font-size: var(--font-size-base);
+  	font-weight: 500;
+  	color: rgba(255, 255, 255, 0.3);
+}
+.send-receive-item {
+  	position: absolute;
+  	top: 65.8px;
+  	left: -0.2px;
+  	border-top: 0.4px solid rgba(140, 140, 140, 0.18);
+  	box-sizing: border-box;
+  	width: 284.4px;
+  	height: 0.4px;
+}
+.send-receive {
+  	width: 100%;
+  	position: relative;
+  	height: 542px;
+  	text-align: left;
+  	font-size: var(--font-size-xs);
+  	color: var(--color-white);
+  	font-family: var(--font-inter);
+}
+
+
+
+
+
+:root {
+  	
+  	/* fonts */
+  	--font-inter: Inter;
+  	
+  	/* font sizes */
+  	--font-size-base: 16px;
+  	--font-size-xs: 12px;
+  	
+  	/* Colors */
+  	--color-gray-100: rgba(255, 255, 255, 0.04);
+  	--color-white: #fff;
+  	
+  	/* Border radiuses */
+  	--br-base: 16px;
+  	
+}
+
+.select-coin {
+  position: relative;
+  /* font-size: var(--font-size-base); */
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-poppins);
+  /* color: var(--color-black); */
+  white-space: pre-wrap;
+  text-align: left;
+  display: inline-block;
+  /* min-width: 95px; */
+}
+
+.select-coin-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xs);
+  font-weight: bold;
+}
+
+.frame-child2 {
+  align-self: stretch;
+  height: 40px;
+  border-style: none;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(123, 123, 123, 0.25) inset, 0 4px 4px rgba(123, 123, 123, 0.25);
+  border-radius: var(--br-xl);
+  /* background-color: var(--color-whitesmoke); */
+  background-color: rgb(255 255 255 / 9%);
+  color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  /* margin-bottom: 1rem; */
+  /* font-weight: bold; */
+}
+.frame-child2 option{
+  color: black;
+  background-color: rgb(255 255 255 / 9%);
+}
+
+.frame-input,
+.frame-parent5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frame-parent5 {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+
+.frame-input {
+  width: 190px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 24px;
+  flex-direction: row;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+  /* font-size: var(--font-size-base); */
+  font-size: 1rem;
+  /* color: var(--color-black); */
+  color: white;
+}
+
+.frame-child3 {
+  align-self: stretch;
+  height: 40px;
+  border-style: none;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(123, 123, 123, 0.25) inset, 0 4px 4px rgba(123, 123, 123, 0.25);
+  border-radius: var(--br-xl);
+  /* background-color: var(--color-whitesmoke); */
+  background-color: rgb(255 255 255 / 9%);
+  color: white;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  /* margin-bottom: 1rem; */
+  /* font-weight: bold; */
+}
+
+.frame-child4,
+.frame-parent6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.frame-parent6 {
+  align-self: stretch;
+  flex-direction: column;
+  /* gap: var(--gap-5xs); */
+}
+
+.frame-child4 {
+  width: 88px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 24px;
+  flex-direction: row;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+  /* font-size: var(--font-size-base);
+  color: var(--color-black); */
+  font-size: 1rem;
+  color: white;
+}
+.rightDown{
+  display: flex;
+    height: 12rem;
+    border-style: none;
+    /* border: 1px solid white; */
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.frame-child5 {
+  align-self: stretch;
+  height: 40px;
+  border-style: none;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(123, 123, 123, 0.25) inset, 0 4px 4px rgba(123, 123, 123, 0.25);
+  border-radius: var(--br-xl);
+  /* background-color: var(--color-whitesmoke); */
+  background-color: rgb(255 255 255 / 9%);
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  color: white;
+  /* margin-bottom: 1rem; */
+  /* font-weight: bold; */
+}
+
+.frame-parent7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* gap: var(--gap-5xs); */
+}
+
+.address-fields,
+.address-fields-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.address-fields {
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.address-fields-wrapper {
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.Swipe-down{
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  flex-direction: column;
+}
+.sd2{
+  display: flex;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sd2 img{
+  height: 10px;
+  width: 10px;
+}
+.coins{
+  
+    background-color: transparent;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.coins option{
+  width: 100px;
+  background-color: transparent;
+}
+
+.send-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tr;
 }
