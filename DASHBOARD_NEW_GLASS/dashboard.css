@@ -112,7 +112,9 @@
   background-color: rgb(255 255 255 / 9%);
   border-radius: 16px;
 }
-
+.sendbtn:hover{
+  color: white;
+}
 .receiveBtn {
   background: transparent;
 }
@@ -209,6 +211,7 @@
   	font-size: 11px;
 }
 .select-coin-dropdown ,#coins {
+  padding: 0.5rem;
   	position: absolute;
   	top: 33px;
   	left: 4px;
@@ -233,6 +236,7 @@
   	position: absolute;
   	top: 6px;
   	left: 27px;
+    font-size: 0.8rem;
 }
 .select-coin {
   	position: absolute;
@@ -251,12 +255,12 @@
   	overflow: hidden;
 }
 .availablebalance {
-  	position: absolute;
-  	top: 68px;
-  	left: 27px;
-  	font-size: 8px;
-  	font-weight: 500;
-  	color: rgba(255, 255, 255, 0.18);
+  position: absolute;
+  top: 68px;
+  left: 27px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(255 255 255 / 50%);
 }
 .amount {
   	position: absolute;
@@ -292,6 +296,7 @@
   	color: rgba(255, 255, 255, 0.2);
 }
 .sendbtn {
+  cursor: pointer;
   	position: absolute;
   	top: 32px;
   	left: 49.01px;
@@ -299,12 +304,16 @@
   	font-weight: 500;
 }
 .receivebtn {
+  cursor: pointer;
   	position: absolute;
   	top: 32px;
   	left: 179.01px;
   	font-size: var(--font-size-base);
   	font-weight: 500;
   	color: rgba(255, 255, 255, 0.3);
+}
+.receivebtn:hover{
+  color: white;
 }
 .send-receive-item {
   	position: absolute;
@@ -627,7 +636,7 @@
 }
 
 .navbar .dd_menu .dd_right{
-  background-color: rgb(128 47 177 / 15%);
+  background-color: rgb(128 47 177 / 25%);
   /* padding: 15px 20px; */
   padding-top: 1rem;
     padding-bottom: 1rem;
@@ -658,8 +667,11 @@
   width: 12rem;
 }
 .navbar .dd_menu li:hover{
-  color: rgb(246, 246, 246);
+  color: rgb(103, 41, 132);
 
+}
+.send-wrapper:hover{
+  background-color: green;
 }
 
 .navbar .dd_menu:before{
