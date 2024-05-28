@@ -15,7 +15,6 @@ senBtn.addEventListener("click",function(){
         document.getElementById("amount").style.display= "flex";   
         document.getElementById("send-btn").style.color= "white";   
         document.getElementById("rec-btn").style.color= "grey";   
-        document.getElementById("send-wrapper").style.display= "flex";   
         document.getElementById("dest-address").innerText= "Destination address";   
         
         curr=true;
@@ -27,16 +26,7 @@ recBtn.addEventListener("click",function(){
         document.getElementById("amount").style.display= "none";
         document.getElementById("send-btn").style.color= "grey";   
         document.getElementById("rec-btn").style.color= "white";   
-        document.getElementById("send-wrapper").style.display= "none";   
-        // document.getElementById("availablebalance").style.display= "flex";   
         document.getElementById("dest-address").innerText= "Address";   
         curr=false;
     }
 })
-
-function getOption() {   
-    selectElement = 
-    document.querySelector('#coins');
-    output = selectElement.value;
-    document.querySelector('#avail-type').textContent = output;
-}
