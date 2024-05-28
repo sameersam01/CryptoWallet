@@ -610,7 +610,7 @@
 
 .navbar .nav_right ul li.nr_li{
   list-style: none;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 	cursor: pointer;
 	color: #fff;
 	font-size: 20px;
@@ -655,9 +655,9 @@
   background-color: rgb(128 47 177 / 25%);
   /* padding: 15px 20px; */
   padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
     padding-right: 1rem;
-    width: 14rem;
+    width: 7.5rem;
     border-radius: 1rem;
     border-bottom: 3px solid transparent;
 }
@@ -672,15 +672,16 @@
     margin: 1.1rem;
 }
 .navbar .dd_menu .dd_right ul li span{
-  color: transparent;
+  color: black;
   font-size: 1.1rem;
+  margin-right: 0.6rem;
 }
 
 .navbar .dd_menu li{
   list-style: none;
 	margin-bottom: 15px;
 	color: black;
-  width: 12rem;
+  width: 8rem;
   font-size: 1rem;
   font-weight: 500;
   margin-left: 1rem;
@@ -719,4 +720,16 @@
 .log-drop{
   text-decoration: none;
     color: black;
+}
+.user{
+  height: 35px;
+  width: 8.5rem;
+  cursor: none;
+}
+.user-top{
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.user-bottom{
+  font-size: 0.85rem;
 }
