@@ -90,6 +90,10 @@
   background-color: rgb(255 255 255 / 9%);
   border-radius: 16px;
 }
+.log-drop{
+  text-decoration: none;
+    color: black;
+}
 
 .tab {
   background-color: rgba(217, 217, 217, 0.09);
@@ -198,7 +202,7 @@
 .view-all-transactions-wrapper {
   	position: absolute;
   	top: 402px;
-  	left: 26.01px;
+  	left: 32px;
   	border-radius: 12px;
   	background-color: #2b2b2b;
   	width: 213px;
@@ -248,7 +252,7 @@
 }
 .destination-address {
   	position: absolute;
-  	top: 146px;
+  	top: 135px;
   	left: 21.01px;
   	width: 241px;
   	height: 70px;
@@ -264,7 +268,7 @@
 }
 .amount {
   	position: absolute;
-  	top: 216px;
+  	top: 200px;
   	left: 21.01px;
   	width: 241px;
   	height: 83px;
@@ -288,12 +292,12 @@
 }
 .swipe-down {
   	position: absolute;
-  	top: 441px;
-  	left: 108.01px;
+  	top: 21rem;
+  	left: 5.6rem;
   	width: 58px;
   	height: 24px;
-  	font-size: 10px;
-  	color: rgba(255, 255, 255, 0.2);
+  	font-size: 11px;
+  	color: rgba(255, 255, 255, 0.5);
 }
 .sendbtn {
   cursor: pointer;
@@ -357,6 +361,7 @@
 }
 
 .select-coin {
+  top: 4.2rem;
   position: relative;
   /* font-size: var(--font-size-base); */
   font-size: 1rem;
@@ -566,6 +571,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   background-color: tr;
   margin-top: -23px;
 }
@@ -576,6 +582,9 @@
 }
 .swipe-down span{
       width: 100px;
+=======
+  top: 18.4rem;
+>>>>>>> bfea2e9dafb429345220d6422f524e8f737e2a06
 }
 .navbar .logo a{
 	display: block;
@@ -650,7 +659,7 @@
   padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    width: 12rem;
+    width: 14rem;
     border-radius: 1rem;
     border-bottom: 3px solid transparent;
 }
@@ -661,12 +670,12 @@
 }
 .navbar .dd_menu .dd_right ul hr{
   display: flex;
-    width: 8rem;
+    width: 12rem;
     margin: 1.1rem;
 }
 .navbar .dd_menu .dd_right ul li span{
   color: transparent;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
 }
 
 .navbar .dd_menu li{
@@ -674,6 +683,9 @@
 	margin-bottom: 15px;
 	color: black;
   width: 12rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1rem;
 }
 .navbar .dd_menu li:hover{
   color: rgb(103, 41, 132);
