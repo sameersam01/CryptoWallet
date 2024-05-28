@@ -567,6 +567,15 @@
   justify-content: center;
   align-items: center;
   background-color: tr;
+  margin-top: -23px;
+}
+.swipe-down{
+  margin-top: -87px;
+  display: flex;
+  justify-content: center;
+}
+.swipe-down span{
+      width: 100px;
 }
 .navbar .logo a{
 	display: block;
@@ -671,7 +680,7 @@
 
 }
 .send-wrapper:hover{
-  background-color: green;
+  background-color: rgba(255, 255, 255, 0.153);
 }
 
 .navbar .dd_menu:before{
