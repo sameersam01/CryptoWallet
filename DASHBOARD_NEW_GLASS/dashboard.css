@@ -198,7 +198,7 @@
 .view-all-transactions-wrapper {
   	position: absolute;
   	top: 402px;
-  	left: 26.01px;
+  	left: 32px;
   	border-radius: 12px;
   	background-color: #2b2b2b;
   	width: 213px;
@@ -248,7 +248,7 @@
 }
 .destination-address {
   	position: absolute;
-  	top: 146px;
+  	top: 135px;
   	left: 21.01px;
   	width: 241px;
   	height: 70px;
@@ -264,7 +264,7 @@
 }
 .amount {
   	position: absolute;
-  	top: 216px;
+  	top: 200px;
   	left: 21.01px;
   	width: 241px;
   	height: 83px;
@@ -288,12 +288,12 @@
 }
 .swipe-down {
   	position: absolute;
-  	top: 441px;
-  	left: 108.01px;
+  	top: 21.1rem;
+  	left: 5.6rem;
   	width: 58px;
   	height: 24px;
-  	font-size: 10px;
-  	color: rgba(255, 255, 255, 0.2);
+  	font-size: 11px;
+  	color: rgba(255, 255, 255, 0.7);
 }
 .sendbtn {
   cursor: pointer;
@@ -357,6 +357,7 @@
 }
 
 .select-coin {
+  top: 4.2rem;
   position: relative;
   /* font-size: var(--font-size-base); */
   font-size: 1rem;
@@ -548,8 +549,23 @@
 }
 .sd2 img{
   height: 10px;
-  width: 10px;
+  width: 15px;
+  animation: move 1.5s infinite;
+  /* color: white; */
 }
+
+@keyframes move{
+  0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(20px);
+}
+100% {
+    transform: translateY(0);
+}
+}
+
 .coins{
   
     background-color: transparent;
@@ -566,7 +582,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: tr;
+  top: 18.4rem;
 }
 .navbar .logo a{
 	display: block;
@@ -641,7 +657,7 @@
   padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    width: 12rem;
+    width: 14rem;
     border-radius: 1rem;
     border-bottom: 3px solid transparent;
 }
@@ -652,7 +668,7 @@
 }
 .navbar .dd_menu .dd_right ul hr{
   display: flex;
-    width: 8rem;
+  width: 12rem;
     margin: 1.1rem;
 }
 .navbar .dd_menu .dd_right ul li span{
@@ -665,13 +681,16 @@
 	margin-bottom: 15px;
 	color: black;
   width: 12rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
 }
 .navbar .dd_menu li:hover{
   color: rgb(103, 41, 132);
 
 }
 .send-wrapper:hover{
-  background-color: green;
+  background-color: rgba(255, 255, 255, 0.153);
 }
 
 .navbar .dd_menu:before{
@@ -696,4 +715,8 @@
   padding: 10px;
   border: none;
   cursor: pointer;
+}
+.log-drop{
+  text-decoration: none;
+    color: black;
 }
