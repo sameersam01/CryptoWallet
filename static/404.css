@@ -38,7 +38,7 @@
     .error .clip:nth-of-type(2) .shadow {
         overflow: hidden;
         position: relative;
-        box-shadow: inset 20px 0px 20px -15px rgba(150, 150, 150,0.8), 20px 0px 20px -15px rgba(150, 150, 150,0.8);
+        box-shadow: inset 20px 0px 20px -15px rgba(255, 255, 255, 0.8), 20px 0px 20px -15px rgba(255, 255, 255, 0.568);
     }
     
     .error .clip:nth-of-type(3) .shadow:after, .error .clip:nth-of-type(1) .shadow:after {
@@ -49,7 +49,7 @@
         z-index: 9999;
         height: 100%;
         width: 10px;
-        background: linear-gradient(90deg, transparent, rgba(173,173,173, 0.8), transparent);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
         border-radius: 50%;
     }
     .error .clip:nth-of-type(3) .shadow:after  {
@@ -59,7 +59,7 @@
         position: relative;
         top: 8%;
         color: white;
-        background: #ff3f3f;
+        background: #0000006c;
         border-radius: 50%;
         display: inline-block;
         transform: skew(45deg);
