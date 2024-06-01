@@ -15,6 +15,11 @@ def Login_page():
 def Signup_page():
    return render_template('signup.html')
 
+@main.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
 @main.route('/Home')
 def Home():
    return render_template('Dashboard.html')
