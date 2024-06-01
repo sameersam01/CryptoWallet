@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Desktop" content="width=device-width, initial-scale=1.0" />
+    <title>CoinCloud - Dashboard</title>
+    <link rel="stylesheet" href="/static/dashboard.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="wrapper">
+        <div class="navbar">
+          <div class="coin-cloud-wrapper">
+            <h3 class="coin-cloud">CoinCloud</h3>
+          </div>
+          <div class="nav_right">
+            <ul>
+              <li class="nr_li">
+                <!-- <a href="../Signin.html"><button class="log-out-wrapper">
+                  Log out
+                </button></a> -->
+                <div class="user">
+                  <div class="user-top">SAMEER</div>
+                  <div class="user-bottom">abc@gmail.com</div>
+                </div>
+              </li>
+              <li class="nr_li dd_main">
+                <img src="/static/image.png" alt="profile_img" />
+
+                <div class="dd_menu">
+                  <div class="dd_right">
+                    <ul>
+                      <!-- <li><span><i class="fa-solid fa-user"></i></span>User 1</li>
+                    <li><span><i class="fa-solid fa-question"></i></span>abc@gmail.com</li> -->
+                      <!-- <hr> -->
+                      <li>
+                        <a href="{{url_for('Landing_page')}}"
+                          ><span><i class="fas fa-sign-out-alt"></i></span>
+                          <div class="log-drop">Logout</div></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script
+        defer
+        src="https://www.livecoinwatch.com/static/lcw-widget.js"
+      ></script>
+      <div
+        class="livecoinwatch-widget-5"
+        lcw-base="USD"
+        lcw-color-tx="#ffffff"
+        lcw-marquee-1="coins"
+        lcw-marquee-2="movers"
+        lcw-marquee-items="30"
+      ></div>
+      <div class="hero">
+        <div class="left">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright">
+              <a
+                href="https://www.tradingview.com/"
+                rel="noopener nofollow"
+                target="_blank"
+                ><span class="blue-text"></span
+              ></a>
+            </div>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js"
+              async
+            >
+              {
+                "feedMode": "all_symbols",
+                  "isTransparent": true,
+                    "displayMode": "regular",
+                      "width": "100%",
+                        "height": "100%",
+                          "colorTheme": "dark",
+                            "locale": "en"
+              }
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+        <div class="center">
+          <div class="chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright">
+                <a
+                  href="https://www.tradingview.com/"
+                  rel="noopener nofollow"
+                  target="_blank"
+                >
+                  ></a
+                >
+              </div>
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js"
+                async
+              >
+                {
+                  "symbols": [
+                    [
+                      "BITSTAMP:BTCUSD|1D"
+                    ],
+                    [
+                      "CME:ETH1!|1D"
+                    ],
+                    [
+                      "CRYPTOCAP:USDT|1D"
+                    ],
+                    [
+                      "CRYPTOCAP:DOGE|1D"
+                    ],
+                    [
+                      "CRYPTOCAP:SHIB|1D"
+                    ],
+                    [
+                      "BINANCE:IOTAUSDT|1D"
+                    ],
+                    [
+                      "BINANCE:ETCUSDT|1D"
+                    ],
+                    [
+                      "CRYPTOCAP:ADA|1D"
+                    ],
+                    [
+                      "CRYPTOCAP:MATIC|1D"
+                    ],
+                    [
+                      "BINANCE:JUPUSDT|1D"
+                    ],
+                    [
+                      "CRYPTOCAP:SOL|1D"
+                    ]
+                  ],
+                    "chartOnly": false,
+                      "width": "100%",
+                        "height": "100%",
+                          "locale": "en",
+                            "colorTheme": "dark",
+                              "autosize": true,
+                                "showVolume": false,
+                                  "showMA": false,
+                                    "hideDateRanges": false,
+                                      "hideMarketStatus": false,
+                                        "hideSymbolLogo": false,
+                                          "scalePosition": "right",
+                                            "scaleMode": "Normal",
+                                              "fontFamily": "Courier New, monospace",
+                                                "fontSize": "10",
+                                                  "noTimeScale": false,
+                                                    "valuesTracking": "1",
+                                                      "changeMode": "price-and-percent",
+                                                        "chartType": "area",
+                                                          "maLineColor": "#2962FF",
+                                                            "maLineWidth": 1,
+                                                              "maLength": 9,
+                                                                "fontColor": "rgba(255, 255, 255, 1)",
+                                                                  "gridLineColor": "rgba(42, 46, 57, 0.07)",
+                                                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                                                      "widgetFontColor": "rgba(255, 255, 255, 1)",
+                                                                        "lineWidth": 2,
+                                                                          "lineType": 0,
+                                                                            "dateRanges": [
+                                                                              "1d|1",
+                                                                              "1m|30",
+                                                                              "3m|60",
+                                                                              "12m|1D",
+                                                                              "60m|1W",
+                                                                              "all|1M"
+                                                                            ]
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+
+          <!-- <div class="balance">
+            <span class="b1">Tokens</span>
+            <div class="b2">
+              <span>Name</span>
+              <span>Balance</span>
+              <span>Total value</span>
+            </div>
+            <div class="b2-values">
+              <span>Bitcoin</span>
+              <span>Rs10,000</span>
+              <span>Rs20,000</span>
+            </div>
+          </div> -->
+        </div>
+        <div class="rightall">
+          <div class="right">
+            <div class="send-receive">
+              <div class="send-receive-child"></div>
+              <div class="send-wrapper" id="send-wrapper">
+                <span><button>Submit</button></span>
+              </div>
+              <div class="swipe-down">
+                <div class="sd2">
+                  <span>Swipe-down</span> <img src="/static/Polygon 1.png" />
+                </div>
+              </div>
+              <div class="view-all-transactions-wrapper">
+                <div class="view-all-transactions">View All Transactions</div>
+              </div>
+              <div class="select-coin">
+                <select name="coins" id="coins" onchange="getOption()">
+                  <option value="BTC">Select coin --</option>
+                  <option value="BTC">Bitcoin</option>
+                  <option value="ETH">Etherium</option>
+                  <option value="JUP">Jupiter</option>
+                  <option value="USDT">Thether</option>
+                </select>
+
+                <div class="select-coin1">Select coin</div>
+              </div>
+              <div class="destination-address">
+                <input class="select-coin-dropdown" type="text" />
+                <div class="select-coin1" id="dest-address">
+                  {Destination Address}
+                </div>
+              </div>
+              <div class="amount" id="amount">
+                <input class="select-coin-dropdown" type="text" />
+                <div class="select-coin1">Amount</div>
+                <div class="availablebalance" id="availablebalance">
+                  available: <span id="avail-amt">7.5487900 </span
+                  ><span id="avail-type">BTC</span>
+                </div>
+              </div>
+              <div class="sendbtn" id="send-btn">Send</div>
+              <div class="receivebtn" id="rec-btn">Receive</div>
+              <div class="send-receive-item"></div>
+            </div>
+          </div>
+          <div class="right-bottom">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+
+              <script
+                type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+                async
+              >
+                {
+                  "colorTheme": "dark",
+                    "dateRange": "12M",
+                      "showChart": false,
+                        "locale": "en",
+                          "width": "100%",
+                            "height": "100%",
+                              "largeChartUrl": "",
+                                "isTransparent": true,
+                                  "showSymbolLogo": true,
+                                    "showFloatingTooltip": false,
+                                      "tabs": [
+                                        {
+                                          "title": "Crypto",
+                                          "symbols": [
+                                            {
+                                              "s": "CRYPTOCAP:SOL"
+                                            },
+                                            {
+                                              "s": "BITSTAMP:BTCUSD"
+                                            },
+                                            {
+                                              "s": "CRYPTOCAP:MATIC"
+                                            },
+                                            {
+                                              "s": "CRYPTOCAP:USDT"
+                                            },
+                                            {
+                                              "s": "BINANCE:ETCUSDT"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/home.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/7bf9ff52a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
