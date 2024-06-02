@@ -17,10 +17,10 @@
         <div class="top-right">
             <div class="sign">
                 <div class="logIn">
-                    <a href="{{url_for('Login_page')}}"><button class="signText signTextIn">Log in</button></a>
+                    <a href="{{url_for('login')}}"><button class="signText signTextIn">Log in</button></a>
                 </div>
                 <div class="signUp">
-                  <a href="{{url_for('Signup_page')}}">  <button class="signText signTextUp">Sign Up</button></a>
+                  <a href="{{url_for('register')}}">  <button class="signText signTextUp">Sign Up</button></a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,8 @@
 
 
   </div>
-  <div class="form">
+  <form action="/login" method="post">
+    <div class="form">
     <div class="inner-form">
       <div class="main-form">
         <div class="mu">
@@ -41,12 +42,13 @@
             more info. Not your device? Use a private window.
           </h2>
           <div class="signin">
-            <span class="email">Email</span>
+            <span class="email" >Email</span>
             <input type="email" name="signin-email" id="e1" placeholder="Your email address " />
             <input type="password" name="signin-password" id="e2" placeholder="Your password">
             <a href="{{url_for('Home')}}"><button class="Signin-btn">Continue</button></a>
           </div>
         </div>
+  </form>
 
         <div class="md">
           <div class="line"></div>
@@ -70,6 +72,7 @@
       </div>
     </div>
     <script src="/static/app.js"></script>
+    <script src="/static/authentication.js"></script>
     <script src="https://kit.fontawesome.com/7bf9ff52a1.js" crossorigin="anonymous"></script>
 </body>
 

@@ -6,44 +6,46 @@
     <title>Coin Vault - Sign up</title>
     <link rel="stylesheet" href="/static/SignupForm.css">
     <link rel="shortcut icon" href="/static/logo.ico" type="image/x-icon">
+    <script type="module" src="/static/auth/register.js"></script>
+    <script src="/static/auth/authfirebase.js"></script>
 </head>
 <body>
-   <div class="header">
+    <div class="header">
         <div class="top-left">
             <h1>CoinCloud</h1>
         </div>
         <div class="top-right">
             <div class="sign">
                 <div class="logIn">
-                    <a href="{{url_for('Login_page')}}"><button class="signText signTextIn">Log in</button></a>
+                    <a href="{{url_for('login')}}"><button class="signText signTextIn">Log in</button></a>
                 </div>
                 <div class="signUp">
-                  <a href="{{url_for('Signup_page')}}">  <button class="signText signTextUp">Sign Up</button></a>
+                    <a href="{{url_for('register')}}"><button class="signText signTextUp">Sign Up</button></a>
                 </div>
             </div>
         </div>
     </div>
 
-
     <div class="main">
-        <div class="m1">
-            <div class="signup">
-                <span>Welcome to <span id="s2">Coin Cloud</span></span>
-            <span id="s1">Sign up</span>
-            <input type="email"  id="e2" placeholder="Enter your Email">
-            <input type="password" placeholder="Create Password">
-            <input type="password" placeholder="Confirm Password">
-            <span>
-                <input type="checkbox"  id="agree-btn" >
-                <span>agree with terms and conditions</span>
-            </span>
-            <button type="submit">Sign up</button>
+        <form id="signupForm">
+            <div class="m1">
+                <div class="signup">
+                    <span>Welcome to <span id="s2">Coin Cloud</span></span>
+                    <span id="s1">Sign up</span>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                    <input type="password" id="password" placeholder="Create Password">
+                    <input type="password" id="confirm_password" placeholder="Confirm Password">
+                    <span>
+                        <input type="checkbox" id="agree-btn">
+                        <span>agree with terms and conditions</span>
+                    </span>
+                    <button type="submit" id="submit">Sign up</button>
+                </div>
             </div>
-            </div>
-           
+        </form>
+    </div>
 
-
-
-     <script src="https://kit.fontawesome.com/7bf9ff52a1.js" crossorigin="anonymous"></script>
+   
+    <script src="https://kit.fontawesome.com/7bf9ff52a1.js" crossorigin="anonymous"></script>
 </body>
 </html>
