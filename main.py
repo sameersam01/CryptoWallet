@@ -1,5 +1,12 @@
 ##building url dynamically
 from flask import Flask,redirect,url_for,render_template,request
+import firebase_admin
+from firebase_admin import credentials
+
+
+
+
+
 
 
 main=Flask(__name__)
@@ -26,6 +33,18 @@ def register():
 # @main.route('/Home')
 # def Home():
 #    return render_template('Dashboard.html')
+
+
+
+##===============================Initialize the Firebase app===========================================
+
+cred = credentials.Certificate("coincloud-serviceAccount-Key.json")
+
+
+firebase_admin.initialize_app(cred)
+
+print("Firebase app initialized successfully.")
+#=========================================================================================================
 
 
 

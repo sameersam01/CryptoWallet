@@ -9,11 +9,7 @@
     
 }
 body{
-<<<<<<< Updated upstream
-    background: url(./animatedBg.gif);
-=======
     background: url(/static/animatedBg.gif);
->>>>>>> Stashed changes
     background-size: cover;
     height: 100vh;
     display: flex;
