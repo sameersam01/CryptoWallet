@@ -1,13 +1,14 @@
 * {
   margin: 0%;
   padding: 0%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Varela Round", sans-serif;
+
   color: white;
-  
 }
-body{
-  background: url(./Cover.png);
+body {
+  background: url(/static/animatedBg.gif);
   background-size: cover;
+  loading: lazy;
 }
 .signin {
   display: flex;
@@ -15,60 +16,50 @@ body{
   justify-content: center;
 }
 
-.header{
+.header {
   display: flex;
   background-color: transparent;
   justify-content: space-between;
   align-items: center;
   color: white;
   padding: 15px;
-  border-bottom: .4px solid rgba(128, 128, 128, 0.296) ;
-
-
+  /* border-bottom: 0.4px solid rgba(128, 128, 128, 0.696); */
 }
-.top-left{
+.top-left {
   font-size: 10px;
   margin-left: 50px;
 }
-.top-right{
+.top-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-.sign{
+.sign {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logIn button{
+.logIn button {
   margin-right: 15px;
   background-color: transparent;
   color: white;
   border: none;
-
 }
-.signUp button{
+.signUp button {
   background-color: transparent;
   color: white;
   border-radius: 10%;
-  border: .4px solid rgba(128, 128, 128, 0.433);
+  border: 0.4px solid rgba(128, 128, 128, 0.833);
 }
-.sign button{
+.sign button {
   cursor: pointer;
   padding: 10px;
   height: 40px;
   font-weight: 600;
- 
 }
-.signUp button:hover{
-   
-   background-color: rgba(255, 255, 255, 0.163);
-
-   
+.signUp button:hover {
+  background-color: rgba(255, 255, 255, 0.163);
 }
-
-
 
 .form {
   display: flex;
@@ -82,9 +73,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.5px solid rgba(255, 255, 255, 0.378);
+  rgba(255, 255, 255, 0.378);
   border-radius: 10px;
-  padding: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
 }
 .mu h1 {
   font-size: 30px;
@@ -96,16 +89,17 @@ body{
 .mu h2 {
   font-size: 15px;
 
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.5px;
-  color: rgba(128, 128, 128, 0.619);
+  color: rgba(128, 128, 128);
 }
 .mu span {
   color: rgb(80, 127, 229);
   cursor: pointer;
+  font-weight: 700;
 }
 .main-form {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,8 +116,9 @@ body{
   padding: 15px;
   border-radius: 10px;
   margin-top: 10px;
-  color: rgba(128, 128, 128, 0.619);
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.168);
 }
 
 .signin span {
@@ -132,6 +127,15 @@ body{
 .Signin-btn {
   background-color: rgb(80, 127, 229);
   width: 100%;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+}
+.google-btn {
+  background-color: rgba(255, 255, 255, 0.168);
+  width: 90%;
   color: white;
   align-items: center;
   padding: 20px;
@@ -163,12 +167,12 @@ body{
   width: fit-content;
 }
 .option {
-  padding: 10px;
+  padding: 20px;
   background-color: transparent;
   color: white;
   border-radius: 20px;
   width: 100%;
-  border: .4px solid rgba(128, 128, 128, 0.29);
+  border: 0.4px solid rgba(128, 128, 128, 0.29);
   margin-bottom: 10px;
   font-size: 15px;
   display: flex;
@@ -176,30 +180,40 @@ body{
   align-items: center;
   cursor: pointer;
 }
+#email::placeholder {
+  color: rgb(165, 163, 163);
+}
+#password::placeholder {
+  color: rgb(165, 163, 163);
+}
+
 .option:hover {
-  background-color:rgba(255, 255, 255, 0.07)
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.option a {
+  text-decoration: none;
 }
 .option span {
   background: none;
-  padding: 10px;
+  padding: 20px;
 }
 .option i {
   background: none;
   font-size: 15px;
 }
 .more-login-options {
-  width: 100%;
 }
 .Signin-btn {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.168);
-  border: .4px solid rgba(224, 213, 213, 0.227);
+  border: 0.4px solid rgba(224, 213, 213, 0.227);
 }
 .Signin-btn:hover {
   background-color: rgba(255, 255, 255, 0.234);
 }
 
-#e1,#e2{
+#e1,
+#e2 {
   background-color: transparent;
   color: white;
 }

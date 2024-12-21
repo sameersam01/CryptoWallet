@@ -2,6 +2,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Error 404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -13,7 +19,7 @@
     />
     <link rel="stylesheet" href="/static/404.css" />
   </head>
-  <body style="background-image: url('{{ url_for('static', filename='animatedBg.gif') }}'); background-size: cover; background-position: center;">
+  <body >
 
     <div class="error">
       <div class="container-floud">
@@ -29,7 +35,7 @@
               <div class="shadow"><span class="digit numberOne"></span></div>
             </div>
           </div>
-          <h2>Oops ! Page not found<br /> <br/>Return <a href={{url_for('Home')}}>Home</a></h2>
+          <h2>Oops ! Page not found<br /> 
         </div>
       </div>
     </div>

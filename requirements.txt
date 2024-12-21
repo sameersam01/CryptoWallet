@@ -1,0 +1,6 @@
+Flask
+firebase-admin
+requests
+google-auth-oauthlib
+bitcoinlib
+eth-account
