@@ -4,6 +4,8 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
   font-family: "Varela Round", sans-serif;
 }
 .main {
@@ -11,7 +13,11 @@
   background-size: cover;
   color: white;
   overflow: hidden;
+  
   /* max-height: 745px; */
+}
+.user span{
+  font-size: 12px;
 }
 .header {
   background-color: transparent;
@@ -154,6 +160,45 @@
   margin-top: 10px;
 }
 
+/* For WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width */
+  height: 12px; /* Adjust the height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Transparent scrollbar thumb */
+  border-radius: 6px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track */
+}
+
+/* Optional: Make scrollbar visible on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly visible on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: transparent transparent; /* Transparent thumb and track */
+}
+
+/* For Edge Legacy */
+body {
+  -ms-overflow-style: none; /* Disable default scrollbar */
+}
+
+body::-ms-scrollbar {
+  display: none; /* Completely hide the scrollbar */
+}
+
+.send-receive{
+  overflow-y: scroll;
+  scrollbar-color: rgba(255, 255, 255, 0);
+}
 .send-receive-child {
   position: absolute;
   top: 0px;
@@ -162,6 +207,7 @@
   border-radius: var(--br-base);
   background-color: #1c1c1c;
   width: 284px;
+  overflow-y: scroll;
   /* height: 600px; */
   height: 100%;
   opacity: 0.6;
